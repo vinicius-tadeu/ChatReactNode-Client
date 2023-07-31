@@ -59,6 +59,12 @@ span{
   color: aqua;
   font-size: 10px;
 }
+
+.message-text{
+  width: 100%;
+  word-wrap: break-word;
+}
+
 .chat-footer{
   width: 100%;
   box-sizing: border-box;

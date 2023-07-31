@@ -56,7 +56,7 @@ export default function Chat({ socket }) {
               <div className={style["message-author"]}>
                 <strong>{message.author}</strong>
               </div>
-              <div className="message-text">{message.text}</div>
+              <div className={style["message-text"]}>{message.text}</div>
               <span>{message.data}</span>
             </div>
           ))}
