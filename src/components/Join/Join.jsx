@@ -14,7 +14,7 @@ export default function Join({setChatVisibility, setSocket}) {
   const handleSubmit = async () => {
     const username = usernameRef.current.value;
     if (!username.trim()) return;
-    const socket = await io.connect("http://localhost:3001");
+    const socket = await io.connect("https://chat-react-node-server.vercel.app");
     socket.emit('set_username', username)
     console.log("Submit");
     setSocket(socket);
